@@ -1,0 +1,30 @@
+
+normalMatrix1 = [[1, 0, 0, 0],
+                [0, 2, 0, 0],
+                [0, 29, 3, 0],
+                [0, 0, 4, 4],
+                [5, 0, 0, 0]]
+normalMatrix2 = [[2, 0, 0, 0],
+                [0, 5, 0, 0],
+                [0, 2, 3, 0],
+                [0, 0, 4, 4],
+                [5, 0, 0, 0]]
+print("normal matrix1")
+for row in normalMatrix1:
+    for element in row:
+        print(element, end=" ")
+    print()
+print("normal matrix2")
+for row in normalMatrix2:
+    for element in row:
+        print(element, end=" ")
+    print()
+
+sparseMatrix=[]
+for i in range(len(normalMatrix1)):
+    for j in range(len(normalMatrix1[0])):
+        if normalMatrix1[i][j] != 0:
+
+            temp = []
+            temp.append(i)
+            temp.ap…
